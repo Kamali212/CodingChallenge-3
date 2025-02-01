@@ -11,4 +11,17 @@ order[2] += 5;
 const total = order.reduce ((sum, order) => sum + order, 0);
 console.log(total);
 
+// Task 3 Employee Peformance Tracking 
+
+let employee = {
+    name: "Kylo Ren",
+    role: "Supreme Leader",
+    performanceScore: 72,
+    isActive: "Yes"
+};
+employee.performanceScore = 76;
+employee.promotionEligible = false;
+
+
+
 
