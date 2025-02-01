@@ -4,3 +4,11 @@ let prices = [30, 45, 60, 72, 3];
 prices.push(55);
 prices.pop();
 console.log("Updated Price List:", prices);
+
+// Task 2 Modifying Customer Orders
+let order = [50, 73, 25 ,18, 33];
+order[2] += 5;
+const total = order.reduce ((sum, order) => sum + order, 0);
+console.log(total);
+
+
