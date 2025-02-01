@@ -19,7 +19,9 @@ let employee = {
     role: "Supreme Leader",
     performanceScore: 72,
     isActive: "Yes"
-}; // Declare object with employee information
+}; 
+
+// Declare object with employee information
 employee.performanceScore = 76; // Updated performance score
 employee.promotionEligible = false; // Add new proprty with boolean value
 console.log(employee); // Log employee to console
@@ -27,15 +29,27 @@ console.log(employee); // Log employee to console
 // Task 4 Customer Feedback Records
 
 let feedback = [ // Feedback array
-    {customername: "Mace Windu", feedbacktext: "Great", rating: 5},
-    {customername: "Darth Maul", feedbacktext: "Amazing", rating: 5},
-    {customername: "Yoda", feedbacktext: "Good", rating: 4}
+    {customerName: "Mace Windu", feedbackText: "Great", rating: 5},
+    {customerName: "Darth Maul", feedbackText: "Amazing", rating: 5},
+    {customerName: "Yoda", feedbackText: "Good", rating: 4}
 ]; 
+
 // Create new customer and add to feedback array
-let newcustomer = {customername: "Grogu", feedbacktext: "Okay", rating: 3 };
+let newcustomer = {customerName: "Grogu", feedbacktext: "Okay", rating: 3 };
 feedback.push(newcustomer); 
+
 // Log feeback to console
 console.log("Feedback:", feedback);
 
+// Task 5 Inventory Management System
 
+let inventory = {
+    itemName: "Blue Milk",
+    stockCount: 10,
+    price: 9
+}
 
+function calculateTotalValue() {
+    return inventory.stockCount * inventory.price;
+}
+console.log(calculateTotalValue())
